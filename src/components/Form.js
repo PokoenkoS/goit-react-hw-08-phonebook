@@ -2,8 +2,8 @@ import React from "react";
 
 import { Button, FormDiv, FormLabel } from "./Main.styled";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "redux/operations";
-import { selectContacts } from "redux/selectors";
+import { addContact } from "redux/Phonebook/operations";
+import { selectContacts } from "redux/Phonebook/selectors";
 import { useState } from "react";
 
 

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from "react-redux";
-import { deleteContact } from "redux/operations";
-import { selectFilteredContacts } from "redux/selectors";
+import { deleteContact } from "redux/Phonebook/operations";
+import { selectFilteredContacts } from "redux/Phonebook/selectors";
 
 
 const ContactList =()=> {

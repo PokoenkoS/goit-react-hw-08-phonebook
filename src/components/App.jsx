@@ -3,9 +3,9 @@ import Form from "./Form";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
 import { useEffect } from "react";
-import { fetchContacts } from "redux/operations";
+import { fetchContacts } from "redux/Phonebook/operations";
 import { useDispatch} from "react-redux";
-
+import AppBar from "./AppBar"
 
 
 export const App = () => {
@@ -18,6 +18,7 @@ useEffect(() => {
 
   return (
    <MainDiv>
+    <AppBar/>
      <h1>Phonebook</h1>
      <Form />
      <h2>Contacts</h2>

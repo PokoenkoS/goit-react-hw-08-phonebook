@@ -2,12 +2,13 @@ import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 
 import { fetchContacts, addContact, deleteContact } from './operations';
 
-const handlePending = (state) => {
+const handlePending = (state ) => {
     state.isLoading=true;
     state.error = null;
 }
-const handleFulfilled = (state) => {
+const handleFulfilled = (state, {payload}) => {
     state.isLoading= false;
+    state.token = payload;
     state.error = null;
 }
 const handleRejected = (state,{payload}) => {
@@ -17,19 +18,19 @@ const handleRejected = (state,{payload}) => {
 
 const handleFulfilledFetch = (state, {payload}) => {
     state.items= payload;
-    
+    state.token = payload.token;
     handleFulfilled(state)
 }
 
 
 const handleFulfilledAdd =(state, {payload}) => {
     state.items.push(payload);
-   
+    // state.token = payload.token;
     handleFulfilled(state)
 }
 const handleFullfilledDelete =(state, {payload}) => {
     state.items = state.items.filter(contact => contact.id !== payload);
-    
+    state.token = " ";
     handleFulfilled(state)
 }
 
@@ -38,6 +39,7 @@ export const phoneSlice = createSlice({
     initialState:  {
         items: [],
         isLoading: false,
+        token: "",
         error: null
       },
           extraReducers:(builder)=>{
