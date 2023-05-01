@@ -17,22 +17,22 @@ const styles = {
 export default function AuthNav() {
     return (
       <div>
-        {/* <NavLink
+        <NavLink
           to="/register"
           exact
           style={styles.link}
           activeStyle={styles.activeLink}
-        > */}
-          Регистрация
-        {/* </NavLink>
+        >
+       <button> Регистрация</button>  
+        </NavLink>
         <NavLink
           to="/login"
           exact
           style={styles.link}
           activeStyle={styles.activeLink}
-        > */}
-          Логин
-        {/* </NavLink> */}
+        >
+          <button>Логин</button>
+        </NavLink>
       </div>
     );
   }

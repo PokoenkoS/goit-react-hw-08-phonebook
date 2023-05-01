@@ -1,4 +1,4 @@
-import { configureStore,} from '@reduxjs/toolkit';
+import { configureStore} from '@reduxjs/toolkit';
 import { phoneSlice } from './Phonebook/phoneSlice';
 import { filterSlice } from './Phonebook/filterSlice';
 import {

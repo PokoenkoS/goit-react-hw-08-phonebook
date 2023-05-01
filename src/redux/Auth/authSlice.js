@@ -15,7 +15,15 @@ const handleFulfilledLogout =(state)=> {
 
 const handleFulfilledFetch =(state, action)=> {
     state.user = action.payload;
-    state.isLoggedIn = true;
+    state.isRefreshing = false;
+    if(state.token !== null){
+        state.isLoggedIn = true;
+    }
+   
+}
+
+const handleRejectetFetch = (state) => {
+    state.isRefreshing = false;
 }
 
  const authSlice = createSlice({
@@ -24,6 +32,7 @@ const handleFulfilledFetch =(state, action)=> {
         user:{ name: null, email: null},
         token: null,
         isLoggedIn: false,
+        isRefreshing:false,
     },
 extraReducers:(builder) => {
     builder
@@ -31,6 +40,7 @@ extraReducers:(builder) => {
     .addCase(operations.login.fulfilled, handleFulfilled)
     .addCase(operations.logout.fulfilled, handleFulfilledLogout)
     .addCase(operations.fetchCurrentUser.fulfilled,handleFulfilledFetch)
+    .addCase(operations.fetchCurrentUser.rejected,handleRejectetFetch)
 }
 })
 

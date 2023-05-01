@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// axios.defaults.baseURL= 'https://644119defadc69b8e07afc61.mockapi.io';
 axios.defaults.baseURL= 'http://connections-api.herokuapp.com';
 
 const token = {

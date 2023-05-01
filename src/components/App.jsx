@@ -1,30 +1,56 @@
-import { MainDiv } from "./Main.styled";
-import Form from "./Form";
-import ContactList from "./ContactList";
-import Filter from "./Filter";
-import { useEffect } from "react";
-import { fetchContacts } from "redux/Phonebook/operations";
-import { useDispatch} from "react-redux";
+
+import { useEffect} from "react";
+import { fetchCurrentUser} from "../redux/Auth/operations";
+import { useDispatch, useSelector} from "react-redux";
 import AppBar from "./AppBar"
+import { selectIsRefreshing } from "redux/Phonebook/selectors";
+import { Route, Routes } from 'react-router-dom';
+import {Contacts} from "../pages/Contacts"
+import LoginView from "pages/LoginView";
+import RegisterView from "pages/RegisterView";
+import { PrivateRoute } from "./PrivateRoute";
+import { PublickRoute } from "./PublickRoute";
+// const RegisterView = lazy(() => import('./RegisterView'));
+// const LoginView = lazy(() => import('./LoginView'));
+
+
 
 
 export const App = () => {
 const dispatch = useDispatch();
+const isRefreshing = useSelector(selectIsRefreshing);
 
 
 useEffect(() => {
-  dispatch(fetchContacts());
+  dispatch(fetchCurrentUser());
 }, [dispatch]);
 
-  return (
-   <MainDiv>
-    <AppBar/>
-     <h1>Phonebook</h1>
-     <Form />
-     <h2>Contacts</h2>
-     <Filter/>
-     <ContactList/>
-     </MainDiv>
+  return isRefreshing ? (
+  <b>Refreshing user...</b>
+  ) : (
+   
+    <Routes>
+      <Route path ='/' element ={<AppBar/>}>
+      <Route
+       path = 'contacts'
+       element ={
+      <PrivateRoute redirectTo="/login" component ={<Contacts/>}/>
+    }/>
+      <Route
+       path = 'login'
+       element ={
+      <PublickRoute redirectTo="/contacts" component ={<LoginView/>}/>
+    }/>
+     <Route
+       path = 'register'
+       element ={
+      <PublickRoute redirectTo="/contacts" component ={<RegisterView/>}/>
+    }/>
+      
+      
+      </Route>
+    </Routes>
+  
   );
 };
 
