@@ -12,7 +12,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import  {authSliceReducer } from './Auth/authSlice';
+import  {authSlice}  from './Auth/authSlice';
 
 const authPersistConfig = {
   key: 'auth',
@@ -24,14 +24,16 @@ export const store = configureStore ({
   reducer: {
     contacts: phoneSlice.reducer,
     filter: filterSlice.reducer,
-    auth: persistReducer(authPersistConfig, authSliceReducer ), 
+    auth: persistReducer(authPersistConfig, authSlice.reducer ), 
   },
-  middleware(getDefaultMiddleware) {
-    return getDefaultMiddleware({
+  middleware:(getDefaultMiddleware)=>
+     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      }
-})}})
+      },
+}),
+devTools: process.env.NODE_ENV === 'development',
+})
 
   export const persistor = persistStore(store)
   

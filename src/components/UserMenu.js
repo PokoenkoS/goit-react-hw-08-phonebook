@@ -1,26 +1,22 @@
 import { useDispatch, useSelector } from "react-redux";
-import operations from "redux/Auth/operations";
-import { selectUser } from '../redux/Phonebook/selectors';
-import ContactList from "./ContactList";
-import Filter from "./Filter";
-import Form from "./Form";
+import operations from "redux/Auth/operationsAuth";
+import { selectToken, selectUser } from '../redux/Phonebook/selectors';
+import { MainDiv } from "./Main.styled";
 
 export default function UserMenu() {
     const dispatch = useDispatch();
     const name = useSelector(selectUser);
+    const token = useSelector(selectToken)
 
     return(
-        <div>
-            <span>Welcome!!! ${name}</span>
-            <button type="button"> onClick ={()=> dispatch(operations.logout())}
+        
+        <MainDiv>
+            <span>Welcome!!! {name}</span>
+            <button type="button" onClick ={()=> dispatch(operations.logout(token))}>
            LogOut
             </button>
-            <h1>Phonebook</h1>
-     <Form />
-     <h2>Contacts</h2>
-     <Filter/>
-            <ContactList/> 
-        </div>
+                    
+        </MainDiv>
         
     )
 }

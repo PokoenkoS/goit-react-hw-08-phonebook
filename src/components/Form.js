@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, FormDiv, FormLabel } from "./Main.styled";
+import { Button, FormDiv, FormLabel, MainDiv } from "./Main.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "redux/Phonebook/operations";
 import { selectContacts } from "redux/Phonebook/selectors";
@@ -47,6 +47,7 @@ import { useState } from "react";
 };
 
     return(
+      <MainDiv>
         <FormDiv onSubmit={handeleSubmite}
         >
         <FormLabel>Name
@@ -73,7 +74,7 @@ import { useState } from "react";
      <Button type="submit">Add contact</Button>  
       
        </FormDiv>
-       
+       </MainDiv>
     
 )
 }

@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import {selectIsLoading, selectIsLoggedIn, selectIsRefreshing } from '../redux/Phonebook/selectors';
 import { useEffect } from "react";
-import fetchCurrentUser from "../redux/Auth/operations"
 import ContactList from "components/ContactList";
-import Form from "components/ContactList";
-import Filter from "components/ContactList";
+import Form from "../components/Form";
+import Filter from "../components/Filter";
 import { Loader } from "components/Loader";
+import { fetchContacts } from "redux/Phonebook/operations";
+import { MainDiv } from "components/Main.styled";
 
 export const Contacts =() => {
     const dispatch = useDispatch();
@@ -15,7 +16,7 @@ export const Contacts =() => {
 
     useEffect(()=> {
         if(!isRefresh){
-            dispatch(fetchCurrentUser());
+            dispatch(fetchContacts());
         }
     },[dispatch, isRefresh]);
 
@@ -23,10 +24,14 @@ export const Contacts =() => {
         <>
         {isLoggedIn&& !isRefresh &&
         <>
+        <MainDiv>
+            
         <h1>Phonebook</h1>
         <Form/>
+        <h2>Contacts</h2>
         <Filter/>
         <ContactList/>
+        </MainDiv>
         </>
        
         }

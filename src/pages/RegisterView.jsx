@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
-import operations from "../redux/Auth/operations";
+import operations from "../redux/Auth/operationsAuth";
 
 export default function RegisterView() {
     const dispatch = useDispatch();
@@ -8,7 +8,9 @@ export default function RegisterView() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleChange = ({target:{name, value}}) =>{
+    const handleChange = e => {
+      
+        const { name, value} = e.currentTarget;
         switch (name){
          case 'name':
          return setName(value);
@@ -23,7 +25,7 @@ export default function RegisterView() {
     }
 
     const hadleSubmit = (e) =>{
-        e.prevenDefault();
+      e.preventDefault();
 dispatch(operations.register({name,email,password}));
 setName  ("");
 setEmail ("");

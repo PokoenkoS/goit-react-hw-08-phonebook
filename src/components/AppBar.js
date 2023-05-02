@@ -12,8 +12,12 @@ export default function AppBar  () {
 return (
    
     <div>
+
+        <div>
         <Navigation/>
-         {isLoggedIn &&<UserMenu /> }
+         {isLoggedIn && <UserMenu /> }
+        </div>
+        
          <Suspense fallback = {<Loader/>}>
          <Outlet/>
          </Suspense>

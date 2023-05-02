@@ -10,7 +10,8 @@ export function Navigation() {
   return (
     <MainDiv>
         <ul>
-            {isLoggedIn ?
+            {isLoggedIn 
+            ?
             <li><NavLink to = "/contacts">Contacts</NavLink></li>
         :
         <>

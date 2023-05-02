@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import operations from "redux/Auth/operations";
+import operations from "redux/Auth/operationsAuth";
 
 export default function LoginView () {
     const dispatch = useDispatch();
@@ -8,25 +8,27 @@ export default function LoginView () {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleChange= ({target:{name, value}}) =>{
-        switch (name){
-         case 'email':
-         return setEmail(value);
-         case 'password':
-         return setPassword(value);
-         default:
-         return;
-        }
-        
-    }
-    const handleSubmit = (e) =>{
+     const handleChange = e => {
+     
+        const { name, value } = e.currentTarget;
+        switch (name) {
+            case "email":
+                setEmail(value);
+                break;
+            case "password":
+                setPassword(value);
+                break;
+            default:
+                return;
+        };
+    };
+    const handleSubmit = e =>{
+        e.preventDefault();
         console.log(e);
-        e.prevenDefault();
-        console.log('hello');
-dispatch(operations.login({email, password}));
-console.log('hello');
-setEmail ("");
-setPassword ("")
+         dispatch(operations.login({email, password}));
+  
+      setEmail ("");
+     setPassword ("")
     }
 return (
     <div>
@@ -36,6 +38,7 @@ return (
                     <input 
                     type="text" 
                     name="email" 
+                    required
                     value={email} 
                     onChange={handleChange}>
                     </input>
@@ -44,6 +47,7 @@ return (
                     <input 
                     type="text" 
                     name="password" 
+                    required
                     value={password} 
                     onChange={handleChange}>
                     </input>

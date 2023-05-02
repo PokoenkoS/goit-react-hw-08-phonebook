@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Navigate } from "react-router";
+import { Navigate } from "react-router-dom";
 import { selectIsLoggedIn } from "redux/Phonebook/selectors";
 
 export function PublickRoute({

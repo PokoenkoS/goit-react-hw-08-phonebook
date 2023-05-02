@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import operations from './operations'
+import operations from './operationsAuth'
 
 const handleFulfilled =(state, action)=> {
     state.user = action.payload.user;
@@ -26,7 +26,7 @@ const handleRejectetFetch = (state) => {
     state.isRefreshing = false;
 }
 
- const authSlice = createSlice({
+ export const authSlice = createSlice({
     name: 'auth',
     initialState: {
         user:{ name: null, email: null},
@@ -44,5 +44,5 @@ extraReducers:(builder) => {
 }
 })
 
-export const authSliceReducer = authSlice.reducer;
+
     

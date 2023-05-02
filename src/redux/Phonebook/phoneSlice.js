@@ -6,9 +6,8 @@ const handlePending = (state ) => {
     state.isLoading=true;
     state.error = null;
 }
-const handleFulfilled = (state, {payload}) => {
+const handleFulfilled = (state) => {
     state.isLoading= false;
-    state.token = payload;
     state.error = null;
 }
 const handleRejected = (state,{payload}) => {
@@ -18,14 +17,12 @@ const handleRejected = (state,{payload}) => {
 
 const handleFulfilledFetch = (state, {payload}) => {
     state.items= payload;
-    state.token = payload.token;
     handleFulfilled(state)
 }
 
 
 const handleFulfilledAdd =(state, {payload}) => {
     state.items.push(payload);
-    // state.token = payload.token;
     handleFulfilled(state)
 }
 const handleFullfilledDelete =(state, {payload}) => {
@@ -39,7 +36,6 @@ export const phoneSlice = createSlice({
     initialState:  {
         items: [],
         isLoading: false,
-        token: "",
         error: null
       },
           extraReducers:(builder)=>{
