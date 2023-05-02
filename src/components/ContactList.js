@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from "react-redux";
 import { deleteContact } from "redux/Phonebook/operations";
 import { selectFilteredContacts } from "redux/Phonebook/selectors";
-
+import Button from '@mui/material/Button';
 
 const ContactList =()=> {
 
@@ -21,7 +21,8 @@ const ContactList =()=> {
       return (
     <li key={contact.id}>
     {contact.name}:{contact.number}
-    <button type="submit" onClick={()=> dispatch(deleteContact(contact.id))}> Delete</button>
+    {/* <button type="submit" onClick={()=> dispatch(deleteContact(contact.id))}> Delete</button> */}
+    <Button type="submit" variant="outlined"  onClick ={()=> dispatch(deleteContact(contact.id))}>Delete</Button> 
     </li>
     )
     })}

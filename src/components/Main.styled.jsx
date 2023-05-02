@@ -16,8 +16,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 border: 3px solid black;
-width: 500px;
-height: 350px;
+width: 400px;
+height: 300px;
 /* align-items: center; */
 padding: 15px 30px;
 

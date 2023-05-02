@@ -1,11 +1,11 @@
 import React from "react";
 
-import { Button, FormDiv, FormLabel, MainDiv } from "./Main.styled";
+import {  FormDiv, FormLabel, MainDiv } from "./Main.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "redux/Phonebook/operations";
 import { selectContacts } from "redux/Phonebook/selectors";
 import { useState } from "react";
-
+import Button from '@mui/material/Button';
 
 
  const Form =()=>{
@@ -71,8 +71,8 @@ import { useState } from "react";
        required
        onChange={handleInputChange}
        /></FormLabel>
-     <Button type="submit">Add contact</Button>  
-      
+     {/* <Button type="submit">Add contact</Button>   */}
+     <Button type="submit" variant="outlined">Add contact</Button> 
        </FormDiv>
        </MainDiv>
     
