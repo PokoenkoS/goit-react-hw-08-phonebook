@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import operations from "redux/Auth/operationsAuth";
+import Button from '@mui/material/Button';
+import { FormDiv, FormLabel, MainDiv, Input } from "../components/Main.styled";
 
 export default function LoginView () {
     const dispatch = useDispatch();
@@ -31,29 +33,30 @@ export default function LoginView () {
      setPassword ("")
     }
 return (
-    <div>
-        <form onSubmit={handleSubmit} autoComplete="off">
+    <MainDiv>
+        <FormDiv onSubmit={handleSubmit} autoComplete="off">
             <h1>Login</h1>
-        <label>Name
-                    <input 
+        <FormLabel>Name
+                    <Input 
                     type="text" 
                     name="email" 
                     required
                     value={email} 
                     onChange={handleChange}>
-                    </input>
-                </label>
-                <label>Email
-                    <input 
+                    </Input>
+                </FormLabel>
+                <FormLabel>Email
+                    <Input 
                     type="text" 
                     name="password" 
                     required
                     value={password} 
                     onChange={handleChange}>
-                    </input>
-                </label>
-                <button type="submit">Login</button>
-        </form>
-    </div>
+                    </Input>
+                </FormLabel>
+                <Button type="submit" variant="outlined" size="medium"  >Login</Button>
+              
+        </FormDiv>
+    </MainDiv>
 )
 }

@@ -17,12 +17,17 @@ flex-direction: column;
 justify-content: space-around;
 border: 3px solid black;
 width: 500px;
-height: 220px;
+height: 350px;
+/* align-items: center; */
+padding: 15px 30px;
 
 `
 export const FormLabel = styled.label`
 width: 100px;
 padding-left: 10px;
+display: flex;
+    flex-direction: column;
+    margin-top: 8px;
 `
 export const Button = styled.button`
 width: 150px;
@@ -37,3 +42,10 @@ list-style:none;
 font-size: 30px;
 color:black;
 `
+export const Input = styled.input`
+    margin-top: 8px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px lightgrey;
+    width: 250px;
+    height: 30px;
+`;

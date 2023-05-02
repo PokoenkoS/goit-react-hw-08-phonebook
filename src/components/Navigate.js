@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/Phonebook/selectors';
 import { MainDiv, Item } from './Main.styled';
 
+import Button from '@mui/material/Button';
+
 export function Navigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
@@ -12,11 +14,12 @@ export function Navigation() {
         <ul>
             {isLoggedIn 
             ?
-            <Item><NavLink to = "/contacts">Contacts</NavLink></Item>
+            <Item><Button variant="contained"><NavLink variant="outlined" to = "/contacts">Contacts</NavLink></Button></Item>
         :
         <>
-        <Item><NavLink to = "/login">Login</NavLink></Item>
-        <Item><NavLink to = "/register">Register</NavLink></Item>
+        <Item><Button variant="outlined"><NavLink to = "/login">Login</NavLink></Button>
+          </Item>
+        <Item><Button variant="outlined"><NavLink variant="contained"to = "/register">Register</NavLink></Button></Item>
         </>}
         </ul>
         

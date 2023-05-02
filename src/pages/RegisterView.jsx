@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
 import operations from "../redux/Auth/operationsAuth";
+import Button from '@mui/material/Button';
+import { FormDiv, FormLabel, MainDiv, Input } from "../components/Main.styled";
 
 export default function RegisterView() {
     const dispatch = useDispatch();
@@ -33,35 +35,36 @@ setPassword ("");
     }
 
     return(
-        <div>
+        <MainDiv>
+        <FormDiv autoComplete="off" onSubmit={hadleSubmit}>
             <h1> Registration</h1>
-            <form autoComplete="off" onSubmit={hadleSubmit}>
-                <label>Name
-                    <input
+               <FormLabel>Name
+                    <Input
                     type="text" 
                     name="name" 
                     value={name} 
                     onChange={handleChange}>
-                    </input>
-                </label>
-                <label>Email
-                    <input 
+                    </Input>
+                </FormLabel>
+                <FormLabel>Email
+                    <Input 
                     type="text" 
                     name="email" 
                     value={email} 
                     onChange={handleChange}>
-                    </input>
-                </label>
-                <label>Password
-                    <input 
+                    </Input>
+                </FormLabel>
+                <FormLabel>Password
+                    <Input 
                     type="text" 
                     name="password" 
                     value={password} 
                     onChange={handleChange}>
-                    </input>
-                </label>
-<button type="submit"> Registration</button>
-            </form>
-        </div>
+                    </Input>
+                </FormLabel>
+                <Button type="submit" variant="outlined">Registration</Button>
+
+        </FormDiv>
+        </MainDiv>
     )
 }
