@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import {selectIsLoggedIn } from '../redux/Phonebook/selectors';
 import UserMenu from './UserMenu'
-// import AuthNav from './AuthNav'
 import { Navigation } from "./Navigate";
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";

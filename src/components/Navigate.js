@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/Phonebook/selectors';
-import { MainDiv } from './Main.styled';
+import { MainDiv, Item } from './Main.styled';
 
 export function Navigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -12,11 +12,11 @@ export function Navigation() {
         <ul>
             {isLoggedIn 
             ?
-            <li><NavLink to = "/contacts">Contacts</NavLink></li>
+            <Item><NavLink to = "/contacts">Contacts</NavLink></Item>
         :
         <>
-        <li><NavLink to = "/login">Login</NavLink></li>
-        <li><NavLink to = "/register">Register</NavLink></li>
+        <Item><NavLink to = "/login">Login</NavLink></Item>
+        <Item><NavLink to = "/register">Register</NavLink></Item>
         </>}
         </ul>
         

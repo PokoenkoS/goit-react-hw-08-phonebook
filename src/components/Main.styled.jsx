@@ -32,3 +32,8 @@ margin-left: 10px;
 margin-top: 10px;
 cursor: pointer;
 `
+export const Item = styled.li`
+list-style:none;
+font-size: 30px;
+color:black;
+`
