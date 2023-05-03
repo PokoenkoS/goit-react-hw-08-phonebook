@@ -10,12 +10,12 @@ const Filter = () =>{
 
  const handleFifter =(e)=> {
    
-    dispatch(filterContact(e.currentTarget.value))
+    dispatch(filterContact(e.currentTarget.value.toLowerCase()))
  }
    
     return (
         
-<input type="text" value={filter}  onChange={handleFifter} />
+<input type="text" value={filter} name="filter"  onChange={handleFifter} />
 
     )
 
