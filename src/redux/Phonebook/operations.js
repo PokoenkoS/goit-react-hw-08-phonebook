@@ -5,7 +5,7 @@ export const fetchContacts = createAsyncThunk('contacts/fetchAll', async()=> {
 
     try {
         const contacts = await fetchApi.fetchContacts();
-        console.log(contacts);
+      
         return contacts;
       
     }catch(error) {
