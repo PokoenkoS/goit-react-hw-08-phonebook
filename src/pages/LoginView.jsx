@@ -36,7 +36,7 @@ return (
     <MainDiv>
         <FormDiv onSubmit={handleSubmit} autoComplete="off">
             <h1>Login</h1>
-        <FormLabel>Name
+        <FormLabel>Email
                     <Input 
                     type="text" 
                     name="email" 
@@ -45,7 +45,7 @@ return (
                     onChange={handleChange}>
                     </Input>
                 </FormLabel>
-                <FormLabel>Email
+                <FormLabel>Password
                     <Input 
                     type="text" 
                     name="password" 
