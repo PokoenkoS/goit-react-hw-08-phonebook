@@ -3,10 +3,11 @@ import AppBar from "./AppBar"
 import { Outlet } from "react-router-dom"
 
 export const Layout =()=> {
-    return (<>
-        <Suspense>
+    return (
+    <>
+       
         <AppBar/>
-        <Suspense fallback = {null}/>
+        <Suspense fallback = {<div>Loading...</div>}>
         <Outlet/>
         </Suspense>
         </>

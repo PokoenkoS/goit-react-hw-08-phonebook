@@ -8,7 +8,7 @@ import { Loader } from "components/Loader";
 import { fetchContacts } from "redux/Phonebook/operations";
 import { MainDiv } from "components/Main.styled";
 
-export const Contacts =() => {
+ const Contacts =() => {
     const dispatch = useDispatch();
     const isLoggedIn = useSelector(selectIsLoggedIn);
     const isLoading = useSelector(selectIsLoading);
@@ -39,3 +39,4 @@ export const Contacts =() => {
         </>
     )
 }
+export default Contacts;

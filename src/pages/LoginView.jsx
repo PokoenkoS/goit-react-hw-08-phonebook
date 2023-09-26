@@ -4,7 +4,7 @@ import operations from "redux/Auth/operationsAuth";
 import Button from '@mui/material/Button';
 import { FormDiv, FormLabel, MainDiv, Input } from "../components/Main.styled";
 
-export default function LoginView () {
+ const LoginView = () => {
     const dispatch = useDispatch();
    
     const [email, setEmail] = useState('');
@@ -60,3 +60,5 @@ return (
     </MainDiv>
 )
 }
+
+export default LoginView;

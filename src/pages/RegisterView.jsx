@@ -4,7 +4,7 @@ import operations from "../redux/Auth/operationsAuth";
 import Button from '@mui/material/Button';
 import { FormDiv, FormLabel, MainDiv, Input } from "../components/Main.styled";
 
-export default function RegisterView() {
+const RegisterView =()=> {
     const dispatch = useDispatch();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -68,3 +68,5 @@ setPassword ("");
         </MainDiv>
     )
 }
+
+export default RegisterView;
