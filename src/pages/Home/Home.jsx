@@ -1,9 +1,9 @@
-import { Container } from "./Home.styled";
+import { Container, Title } from "./Home.styled";
 
 const Home =()=> {
     return (
         <Container>
-            <h1>Phonebooke </h1>
+            <Title>Phonebooke </Title>
         </Container>
     )
 }

@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 font-size: 40;
 border-width: medium;
-color: #010101;`;
+color: #010101;`
 
 export const FormDiv = styled.form`
 display: flex;
@@ -36,11 +36,11 @@ margin-left: 10px;
 margin-top: 10px;
 cursor: pointer;
 `
-export const Item = styled.li`
-list-style:none;
-font-size: 30px;
-color:black;
-`
+// export const Item = styled.li`
+// list-style:none;
+// font-size: 30px;
+// color:black;
+// `
 export const Input = styled.input`
     margin-top: 8px;
     border-radius: 6px;
