@@ -1,8 +1,10 @@
+import { Container } from "./Home.styled";
+
 const Home =()=> {
     return (
-        <div>
+        <Container>
             <h1>Phonebooke </h1>
-        </div>
+        </Container>
     )
 }
 export default Home;
