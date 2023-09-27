@@ -4,24 +4,26 @@ export const MainDiv = styled.div`
 margin-right: auto;
 margin-left: auto;
 display: flex;
-/* flex-direction: column; */
 justify-content: center;
 align-items: center;
-font-size: 40;
+font-size: 30;
 border-width: medium;
 color: #010101;`
 
 export const Item = styled.li`
 list-style:none;
-font-size: 30px;
-color:black;
+
 `
 
 export const List = styled.ul`
+
+padding:0;
     display: flex;
     width: 100%;
+    justify-content: space-between;
 `
 
 export const Container = styled.div`
     display:flex;
+    padding-right:20px;
 `

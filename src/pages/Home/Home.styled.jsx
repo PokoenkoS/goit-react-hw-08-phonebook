@@ -9,7 +9,7 @@ height: 1000px; */
 min-height: 89vh;
     background-image: url(${img});
     background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   margin: 0 auto;
  `

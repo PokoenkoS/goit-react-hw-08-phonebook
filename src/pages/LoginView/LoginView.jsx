@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import operations from "redux/Auth/operationsAuth";
-import Button from '@mui/material/Button';
-import { FormDiv, FormLabel, MainDiv, Input } from "../../components/Main.styled";
+// import Button from '@mui/material/Button';
+
+import { FormDiv, FormLabel, MainDiv, Input, Button, Title } from "./LoginView.styled";
+
 
  const LoginView = () => {
     const dispatch = useDispatch();
@@ -35,7 +37,7 @@ import { FormDiv, FormLabel, MainDiv, Input } from "../../components/Main.styled
 return (
     <MainDiv>
         <FormDiv onSubmit={handleSubmit} autoComplete="off">
-            <h1>Login</h1>
+            <Title>Log in</Title>
         <FormLabel>Email
                     <Input 
                     type="text" 
@@ -54,7 +56,7 @@ return (
                     onChange={handleChange}>
                     </Input>
                 </FormLabel>
-                <Button type="submit" variant="outlined" size="medium"  >Login</Button>
+                <Button type="submit">Log in</Button>
               
         </FormDiv>
     </MainDiv>
