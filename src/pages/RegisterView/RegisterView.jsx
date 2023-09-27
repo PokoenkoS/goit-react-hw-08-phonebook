@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
 import operations from "../../redux/Auth/operationsAuth";
-import Button from '@mui/material/Button';
-import { FormDiv, FormLabel, MainDiv, Input } from "../../components/Main.styled";
+// import Button from '@mui/material/Button';
+import { FormDiv, FormLabel, MainDiv, Input, Title, Button } from "./RegisterView.styled";
 
 const RegisterView =()=> {
     const dispatch = useDispatch();
@@ -37,7 +37,7 @@ setPassword ("");
     return(
         <MainDiv>
         <FormDiv autoComplete="off" onSubmit={hadleSubmit}>
-            <h1> Registration</h1>
+            <Title> Register</Title>
                <FormLabel>Name
                     <Input
                     type="text" 
@@ -62,7 +62,7 @@ setPassword ("");
                     onChange={handleChange}>
                     </Input>
                 </FormLabel>
-                <Button type="submit" variant="outlined">Registration</Button>
+                <Button type="submit">Register</Button>
 
         </FormDiv>
         </MainDiv>
