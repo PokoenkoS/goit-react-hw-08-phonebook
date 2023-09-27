@@ -1,9 +1,10 @@
-import { Container, Title } from "./Home.styled";
+import { Container, Text, Title } from "./Home.styled";
 
 const Home =()=> {
     return (
         <Container>
-            <Title>Phonebooke </Title>
+            <Title>Phonebook</Title>
+            <Text>Storage of your contacts</Text>
         </Container>
     )
 }

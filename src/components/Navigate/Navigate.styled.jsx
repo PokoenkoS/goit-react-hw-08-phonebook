@@ -19,4 +19,9 @@ color:black;
 
 export const List = styled.ul`
     display: flex;
+    width: 100%;
+`
+
+export const Container = styled.div`
+    display:flex;
 `

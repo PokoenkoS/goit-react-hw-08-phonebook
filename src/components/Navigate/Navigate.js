@@ -3,14 +3,20 @@ import { useSelector } from 'react-redux';
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/Phonebook/selectors';
-import { MainDiv, Item, List } from './Navigate.styled';
+import { MainDiv, Item, List, Container } from './Navigate.styled';
 import Button from '@mui/material/Button';
 
 const StyledLink = styled(NavLink)`
   color: black;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+   
 
   &.active {
-    color: orange;
+    color: red;
   }
 `;
 
@@ -23,14 +29,16 @@ export function Navigation() {
             {isLoggedIn 
             ?
             <>
-            <Item><Button variant="contained"><StyledLink variant="outlined" to = "/">Home</StyledLink></Button></Item>
-            <Item><Button variant="contained"><StyledLink variant="outlined" to = "/contacts">Contacts</StyledLink></Button></Item>
+            <Item><Button variant="text"><StyledLink variant="outlined" to = "/">Home</StyledLink></Button></Item>
+            <Item><Button variant="text"><StyledLink variant="outlined" to = "/contacts">Contacts</StyledLink></Button></Item>
             </>
         :
         <>
-        <Item><Button variant="outlined"><StyledLink variant="outlined" to = "/">Home</StyledLink></Button></Item>
-        <Item><Button variant="outlined"><StyledLink to = "/login">Login</StyledLink></Button></Item>
-        <Item><Button variant="outlined"><StyledLink variant="contained"to = "/register">Register</StyledLink></Button></Item>
+        <Item><Button variant="text"><StyledLink variant="outlined" to = "/">Home</StyledLink></Button></Item>
+        <Container>
+        <Item><Button variant="text"><StyledLink to = "/login">Log in</StyledLink></Button></Item>
+        <Item><Button variant="text"><StyledLink variant="contained"to = "/register">Register</StyledLink></Button></Item>
+        </Container>
         </>}
         </List>
         
