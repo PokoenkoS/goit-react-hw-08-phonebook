@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import operations from "redux/Auth/operationsAuth";
 import { selectToken, selectUser } from '../../redux/Phonebook/selectors';
-import { MainDiv } from "./UserMenu.styled";
-import Button from '@mui/material/Button';
+import { MainDiv, Button } from "./UserMenu.styled";
+// import Button from '@mui/material/Button';
 
 export default function UserMenu() {
     const dispatch = useDispatch();
@@ -13,7 +13,7 @@ export default function UserMenu() {
         
         <MainDiv>
             <span>Welcome {name}!</span>
-            <Button type="button" variant="outlined"  onClick ={()=> dispatch(operations.logout(token))}>LogOut</Button> 
+            <Button type="button" onClick ={()=> dispatch(operations.logout(token))}>LogOut</Button> 
         </MainDiv>
         
     )

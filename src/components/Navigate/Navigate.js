@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 const StyledLink = styled(NavLink)`
   color: black;
-  width: 100px;
+  /* width: 100px; */
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;

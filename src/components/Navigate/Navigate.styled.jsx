@@ -5,15 +5,14 @@ width:1440px;
 margin-right: auto;
 margin-left: auto;
 display: flex;
-justify-content: center;
-align-items: center;
-font-size: 30;
-border-width: medium;
+/* justify-content: center; */
+/* align-items: center; */
+/* font-size: 30; */
+/* border-width: medium; */
 color: #010101;`
 
 export const Item = styled.li`
 list-style:none;
-
 `
 
 export const List = styled.ul`
