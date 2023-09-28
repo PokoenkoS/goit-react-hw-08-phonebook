@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { filterContact } from "redux/Phonebook/filterSlice";
 import { selectFilter } from "redux/Phonebook/selectors";
+import { Input } from "./Filter.styled";
 
 
 const Filter = () =>{
@@ -15,7 +16,7 @@ const Filter = () =>{
    
     return (
         
-<input type="text" value={filter} name="filter"  onChange={handleFifter} />
+<Input type="text" value={filter} name="filter"  onChange={handleFifter} />
 
     )
 

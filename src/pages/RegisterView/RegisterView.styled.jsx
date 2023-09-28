@@ -51,7 +51,7 @@ height: 30px;
 export const Button = styled.button`
     background-color: #aee2e2;
     width: 150px;
-    padding: 5px;
+    padding: 10px;
     margin-left: 120px;
     border-radius: 6px;
     &:hover{

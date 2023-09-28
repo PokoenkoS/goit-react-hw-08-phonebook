@@ -3,9 +3,6 @@ import img from '../../image/phone-book-and-telephone-arrangement.jpg';
 
 
 export const Container = styled.div`
-/* width: 1180px;
-height: 1000px; */
-/* display: inline-block; */
 min-height: 89vh;
     background-image: url(${img});
     background-repeat: no-repeat;

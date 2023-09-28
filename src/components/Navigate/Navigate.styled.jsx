@@ -16,8 +16,8 @@ list-style:none;
 `
 
 export const List = styled.ul`
-
-padding:0;
+margin: 0;
+padding:10px 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
