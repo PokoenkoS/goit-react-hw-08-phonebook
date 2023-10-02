@@ -12,7 +12,7 @@ min-height: 89vh;
  `
 
  export const Title = styled.h1`
- /* margin: 0 auto; */
+ 
     padding-top:150px;
     padding-left:50px;
     font-size: 34px;
