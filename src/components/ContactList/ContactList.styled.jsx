@@ -14,14 +14,18 @@ export const List = styled.ul`
 export const Item = styled.li`
 width: 400px;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
    
-    /* text-align: center; */
-     /* align-items: center; */
 `
+export const Info = styled.div`
+      display: flex;
+`
+
 export const Text = styled.p`
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
     
 `
 
