@@ -5,7 +5,7 @@ import { deleteContact } from "redux/Phonebook/operations";
 import { selectFilteredContacts } from "redux/Phonebook/selectors";
 import { Container, List, Item, Button, Text } from "./ContactList.styled";
 import Avatar from '@mui/material/Avatar';
-import { deepOrange } from '@mui/material/colors';
+
 
 const ContactList =()=> {
   const contacts = useSelector(selectFilteredContacts);

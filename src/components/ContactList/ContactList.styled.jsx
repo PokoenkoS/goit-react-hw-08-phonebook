@@ -1,25 +1,28 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-   
+
 `
 
 export const List = styled.ul`
+    justify-content: space-around; 
   padding:0;
-    text-align: center;
+ 
 
 `
 
 export const Item = styled.li`
 width: 400px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+   
     /* text-align: center; */
      /* align-items: center; */
 `
 export const Text = styled.p`
     display: flex;
     flex-direction: column;
+    
 `
 
 export const Button = styled.button`
