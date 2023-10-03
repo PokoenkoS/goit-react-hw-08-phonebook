@@ -6,7 +6,12 @@ padding:10px 30px;
 display: flex;
 justify-content: flex-end;
 font-weight: bold;
-color: #010101;`
+color: #010101;
+@media (max-width: 768px) {
+    width: 68px;
+/* height: 100px; */
+  }
+`
 
 export const Button = styled.button`
     margin-left: 50px;

@@ -5,11 +5,12 @@ width:1440px;
 margin-right: auto;
 margin-left: auto;
 display: flex;
-/* justify-content: center; */
-/* align-items: center; */
-/* font-size: 30; */
-/* border-width: medium; */
-color: #010101;`
+color: #010101;
+@media (max-width: 768px) {
+width: 768px;
+height: 80px;
+  }
+`
 
 export const Item = styled.li`
 list-style:none;
@@ -21,6 +22,10 @@ padding:10px 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media (max-width: 768px) {
+    width: 768px;
+/* height: 100px; */
+  }
 `
 
 export const Container = styled.div`

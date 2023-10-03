@@ -10,7 +10,10 @@ width: 250px;
 height: 200px;
 padding: 15px 30px;
 margin-top: 20px;
-
+@media (max-width: 768px) {
+    width: 150px;
+height: 100px;
+  }
 `
 export const FormLabel = styled.label`
 width: 100px;
@@ -19,6 +22,11 @@ flex-direction: column;
 margin-top: 8px;
 font-size: 20px;
 font-weight: bold;
+@media (max-width: 768px) {
+    /* width: 50px; */
+    font-size: 10px;
+
+  }
 `
 
 export const Input = styled.input`
@@ -27,6 +35,10 @@ border-radius: 6px;
 border-color: #aee2e2;
 width: 200px;
 height: 30px;
+@media (max-width: 768px) {
+    width: 80px;
+height: 15px;
+  }
 
 `    
 
@@ -42,5 +54,11 @@ export const Button = styled.button`
         background-color: red;
         color:#aee2e2;
     }
+    @media (max-width: 768px) {
+    width: 80px;
+    /* height: px; */
+    font-size: 8px;
+    padding: 5px;
+  }
     
 `
