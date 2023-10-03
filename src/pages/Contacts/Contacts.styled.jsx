@@ -16,8 +16,7 @@ background-image: url(${img});
 
   @media (max-width: 768px) {
   flex-direction:column;
-  align-items: center;
-  background-size: 30%;
+  background-size: 50%;
   background-position:right ;
 
   }
@@ -25,6 +24,11 @@ background-image: url(${img});
 export const Container = styled.div`
     margin-left: 150px;
     margin-top: 60px;
+    @media (max-width: 768px) {
+        margin-left: 30px;
+  
+
+  }
 `
 
 export const Title = styled.h1`

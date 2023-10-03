@@ -8,7 +8,7 @@ justify-content: flex-end;
 font-weight: bold;
 color: #010101;
 @media (max-width: 768px) {
-    width: 68px;
+    width: 768px;
 /* height: 100px; */
   }
 `
