@@ -11,8 +11,8 @@ height: 200px;
 padding: 15px 30px;
 margin-top: 20px;
 @media (max-width: 768px) {
-    width: 150px;
-height: 100px;
+    width: 190px;
+height: 130px;
   }
 `
 export const FormLabel = styled.label`
@@ -24,7 +24,7 @@ font-size: 20px;
 font-weight: bold;
 @media (max-width: 768px) {
     /* width: 50px; */
-    font-size: 10px;
+    font-size: 12px;
 
   }
 `
@@ -36,8 +36,8 @@ border-color: #aee2e2;
 width: 200px;
 height: 30px;
 @media (max-width: 768px) {
-    width: 80px;
-height: 15px;
+    width: 120px;
+height: 23px;
   }
 
 `    
@@ -55,10 +55,11 @@ export const Button = styled.button`
         color:#aee2e2;
     }
     @media (max-width: 768px) {
-    width: 80px;
+    width: 100px;
     /* height: px; */
-    font-size: 8px;
+    font-size: 12px;
     padding: 5px;
+    margin-left: 0px;
   }
     
 `
