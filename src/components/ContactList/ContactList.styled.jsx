@@ -20,6 +20,7 @@ width: 400px;
     justify-content: space-between;
     @media (max-width: 768px) {
   width:300px;
+  margin-top:10px;
 
   }
 `
@@ -46,5 +47,11 @@ export const Button = styled.button`
         background-color: red;
         color:#aee2e2;
     }
+    @media (max-width: 768px) {
+     width:100px;
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 13px;
+  }
     
 `
