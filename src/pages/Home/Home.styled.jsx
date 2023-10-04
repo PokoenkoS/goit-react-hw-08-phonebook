@@ -3,12 +3,20 @@ import img from '../../image/phone-book-and-telephone-arrangement.jpg';
 
 
 export const Container = styled.div`
-min-height: 89vh;
-    background-image: url(${img});
-    background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  margin: 0 auto;
+   width: 420px;
+   margin: 0 auto;
+   background-image: url(${img});
+   background-size: 100%;
+   min-height: 100%;
+   background-repeat: no-repeat;
+  @media (max-width: 1200px) {
+    width: 1440px;
+    height: 1460px;
+    /* max-width: 1200px; */
+    /* background-size: cover; */
+   background-position: center;
+   /* min-height: 100vh; */
+  }
  `
 
  export const Title = styled.h1`
