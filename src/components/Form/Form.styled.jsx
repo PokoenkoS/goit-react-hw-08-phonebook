@@ -11,7 +11,7 @@ height: 200px;
 padding: 15px 30px;
 margin-top: 20px;
 @media screen and (min-width: 768px) {
-    width: 190px;
+    width: 160px;
 height: 130px;
   }
 `
@@ -36,7 +36,7 @@ border-color: #aee2e2;
 width: 200px;
 height: 30px;
 @media screen and (min-width: 768px) {
-    width: 120px;
+    width: 150px;
 height: 23px;
   }
 
@@ -56,7 +56,7 @@ export const Button = styled.button`
         color:#aee2e2;
     }
     @media screen and  (min-width: 768px) {
-    width: 150px;
+    width: 100px;
     /* height: px; */
     font-size: 12px;
     padding: 5px;

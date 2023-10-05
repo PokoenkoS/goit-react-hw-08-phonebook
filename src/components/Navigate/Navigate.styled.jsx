@@ -7,9 +7,10 @@ margin-right: auto;
 margin-left: auto;
 display: flex;
 color: #010101;
-@media screen and (max-width: 768px) {
-/* width: 768px; */
+@media screen and (min-width: 768px) {
+width: 768px;
 /* height: 80px; */
+
   }
 `
 
@@ -26,9 +27,9 @@ padding:10px 0;
     width: 100%;
     justify-content: space-between;
 
-    @media screen and (max-width: 768px) {
-    width: 768px;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+    /* width: 768px; */
+    /* justify-content: space-between; */
 /* height: 100px; */
   }
 `

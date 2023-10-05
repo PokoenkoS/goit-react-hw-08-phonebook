@@ -15,9 +15,9 @@ background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
 
-@media screen and (max-width: 1400px) {
-    /* width: 1400px;
-    height: 1460px; */
+@media screen and (min-width: 768px) {
+    width: 768px;
+    /* height: 1460px; */
    
   }
 
@@ -34,10 +34,10 @@ width: 250px;
 height: 250px;
 padding: 5px 3px;
 @media screen and (min-width: 768px) {
-   
+   padding-top: 20px;
     /* width: 1400px;
     height: 1460px; */
-    width: 400px;
+    width: 350px;
 height: 300px;
     }
 
@@ -52,9 +52,10 @@ margin-left: 10px;
 font-size: 15px;
 font-weight: bold;
 @media screen and (min-width: 768px) {
-width: 100px;
+/* width: 100px; */
 padding-left: 10px;
 margin-left: 50px;
+font-size: 25px;
 }
 `
 
@@ -65,9 +66,8 @@ border-color: #aee2e2;
 width: 200px;
 height: 30px;
 @media screen and (min-width: 768px) {
-    
     width: 250px;
-    height: 30px;
+    /* height: 30px; */
     }
 `    
 
@@ -85,7 +85,7 @@ export const Button = styled.button`
     @media screen and (min-width: 768px) {
         width: 150px;
         margin-left: 120px;
-  
+        font-size: 20px;
     }
 `
 

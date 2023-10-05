@@ -2,13 +2,8 @@ import styled from '@emotion/styled';
 import img from '../../image/phone-book-and-telephone-arrangement.jpg';
 
 export const MainDiv = styled.div`
-
-/* margin-right: auto;
-margin-left: auto; */
 display: flex;
-/* flex-direction: column; */
 justify-content: center;
-/* align-items: center; */
 font-size: 40;
 border-width: medium;
 color: #010101;
@@ -31,13 +26,13 @@ height: 300px;
 margin-top:20px;
 padding: 15px 30px;
 @media screen and (min-width: 768px) {
-width: 400px;
+width: 350px;
 height: 400px;
   }
 
 `
 export const FormLabel = styled.label`
-width: 100px;
+width: 160px;
 padding-left: 10px;
 
 display: flex;
@@ -47,9 +42,10 @@ margin-left: 10px;
 font-size: 15px;
 font-weight: bold;
 @media screen and (min-width: 768px) {
-width: 250px;
-height: 30px;
+/* width: 250px;
+height: 30px; */
 margin-left: 50px;
+font-size: 25px;
   }
 `
 
@@ -60,8 +56,8 @@ border-color: #aee2e2;
 width: 250px;
 height: 30px;
 @media screen and (min-width: 768px) {
-width: 250px;
-height: 30px;
+/* width: 250px;
+height: 30px; */
   }
 
 `    
@@ -79,6 +75,7 @@ export const Button = styled.button`
     }
     @media screen and (min-width: 768px) {
         margin-left: 120px;
+        font-size: 20px;
   }
     
 `
