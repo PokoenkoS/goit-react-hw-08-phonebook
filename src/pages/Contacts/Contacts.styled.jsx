@@ -3,22 +3,23 @@ import img from '../../image/Mano.jpg';
 
 export const MainDiv = styled.div`
 min-height: 89vh;
-padding:10px 30px;
+padding:10px 50px;
 display: flex;
-justify-content: flex-start;
+flex-direction:column;
+/* justify-content: flex-start; */
 font-size: 40;
-border-width: medium;
+/* border-width: medium; */
 color: #010101;
 background-image: url(${img});
     background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: right;
+  background-size: 100%;
+  background-position: center;
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
   flex-direction:column;
   background-size: 50%;
   background-position:right ;
-
+  padding:10px 30px;
   }
 `
 export const Container = styled.div`
