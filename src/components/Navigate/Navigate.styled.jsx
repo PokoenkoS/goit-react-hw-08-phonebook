@@ -1,19 +1,22 @@
 import styled from '@emotion/styled';
 
 export const MainDiv = styled.div`
-width:1440px;
+/* width:1200px; */
+width: 420px;
 margin-right: auto;
 margin-left: auto;
 display: flex;
 color: #010101;
-@media (max-width: 768px) {
-width: 768px;
-height: 80px;
+@media screen and (max-width: 768px) {
+/* width: 768px; */
+/* height: 80px; */
   }
 `
 
 export const Item = styled.li`
 list-style:none;
+/* font-size: 1px; */
+/* font-weight: small; */
 `
 
 export const List = styled.ul`
@@ -22,8 +25,10 @@ padding:10px 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    @media (max-width: 768px) {
+
+    @media screen and (max-width: 768px) {
     width: 768px;
+    justify-content: space-between;
 /* height: 100px; */
   }
 `

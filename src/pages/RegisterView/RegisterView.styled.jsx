@@ -15,7 +15,9 @@ min-height: 89vh;
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: 100%;
-background-position: center;`
+background-position: center;
+
+`
 
 export const FormDiv = styled.form`
 display: flex;
@@ -26,6 +28,10 @@ border-radius: 30px;
 width: 400px;
 height: 400px;
 padding: 15px 30px;
+@media screen and (max-width: 768px) {
+    /* width: 300px; */
+height: 350px;
+  }
 
 `
 export const FormLabel = styled.label`
