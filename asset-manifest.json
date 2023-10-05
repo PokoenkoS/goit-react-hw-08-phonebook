@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.050a4cdf.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.47be8ab4.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.fafcf3e5.js",
     "static/js/485.1d463cdd.chunk.js": "/goit-react-hw-08-phonebook/static/js/485.1d463cdd.chunk.js",
-    "static/js/694.8d199877.chunk.js": "/goit-react-hw-08-phonebook/static/js/694.8d199877.chunk.js",
+    "static/js/694.e440648d.chunk.js": "/goit-react-hw-08-phonebook/static/js/694.e440648d.chunk.js",
     "static/js/884.37b54286.chunk.js": "/goit-react-hw-08-phonebook/static/js/884.37b54286.chunk.js",
     "static/js/288.7ab87247.chunk.js": "/goit-react-hw-08-phonebook/static/js/288.7ab87247.chunk.js",
     "static/js/330.22b70f37.chunk.js": "/goit-react-hw-08-phonebook/static/js/330.22b70f37.chunk.js",
@@ -11,15 +11,15 @@
     "static/media/Mano.jpg": "/goit-react-hw-08-phonebook/static/media/Mano.7c24d8540c97fbfd3966.jpg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.050a4cdf.css.map": "/goit-react-hw-08-phonebook/static/css/main.050a4cdf.css.map",
-    "main.47be8ab4.js.map": "/goit-react-hw-08-phonebook/static/js/main.47be8ab4.js.map",
+    "main.fafcf3e5.js.map": "/goit-react-hw-08-phonebook/static/js/main.fafcf3e5.js.map",
     "485.1d463cdd.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/485.1d463cdd.chunk.js.map",
-    "694.8d199877.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/694.8d199877.chunk.js.map",
+    "694.e440648d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/694.e440648d.chunk.js.map",
     "884.37b54286.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/884.37b54286.chunk.js.map",
     "288.7ab87247.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/288.7ab87247.chunk.js.map",
     "330.22b70f37.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/330.22b70f37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.050a4cdf.css",
-    "static/js/main.47be8ab4.js"
+    "static/js/main.fafcf3e5.js"
   ]
 }
