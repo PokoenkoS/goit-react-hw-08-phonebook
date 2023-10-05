@@ -2,12 +2,13 @@ import styled from '@emotion/styled';
 import img from '../../image/phone-book-and-telephone-arrangement.jpg';
 
 export const MainDiv = styled.div`
-margin-right: auto;
-margin-left: auto;
+
+/* margin-right: auto;
+margin-left: auto; */
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
 justify-content: center;
-align-items: center;
+/* align-items: center; */
 font-size: 40;
 border-width: medium;
 color: #010101;
@@ -25,24 +26,31 @@ flex-direction: column;
 justify-content: space-around;
 border: 3px solid #aee2e2;
 border-radius: 30px;
+width: 300px;
+height: 300px;
+margin-top:20px;
+padding: 15px 30px;
+@media screen and (min-width: 768px) {
 width: 400px;
 height: 400px;
-padding: 15px 30px;
-@media screen and (max-width: 768px) {
-    /* width: 300px; */
-height: 350px;
   }
 
 `
 export const FormLabel = styled.label`
 width: 100px;
 padding-left: 10px;
+
 display: flex;
 flex-direction: column;
 margin-top: 8px;
-margin-left: 50px;
-font-size: 20px;
+margin-left: 10px;
+font-size: 15px;
 font-weight: bold;
+@media screen and (min-width: 768px) {
+width: 250px;
+height: 30px;
+margin-left: 50px;
+  }
 `
 
 export const Input = styled.input`
@@ -51,6 +59,10 @@ border-radius: 6px;
 border-color: #aee2e2;
 width: 250px;
 height: 30px;
+@media screen and (min-width: 768px) {
+width: 250px;
+height: 30px;
+  }
 
 `    
 
@@ -58,17 +70,21 @@ export const Button = styled.button`
     background-color: #aee2e2;
     width: 150px;
     padding: 10px;
-    margin-left: 120px;
+    margin-left: 80px;
     border-radius: 6px;
+    margin-top: 20px;
     &:hover{
         background-color: red;
         color:#aee2e2;
     }
+    @media screen and (min-width: 768px) {
+        margin-left: 120px;
+  }
     
 `
 
 export const Title = styled.h2`
 text-align: center;
 font-family:Croissant One;
-font-size: 35px;
+font-size: 30px;
 `

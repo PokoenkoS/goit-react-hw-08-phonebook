@@ -49,7 +49,7 @@ display: flex;
 flex-direction: column;
 margin-top: 8px;
 margin-left: 10px;
-font-size: 20px;
+font-size: 15px;
 font-weight: bold;
 @media screen and (min-width: 768px) {
 width: 100px;
@@ -92,5 +92,5 @@ export const Button = styled.button`
 export const Title = styled.h2`
 text-align: center;
 font-family:Croissant One;
-font-size: 35px;
+font-size: 30px;
 `
