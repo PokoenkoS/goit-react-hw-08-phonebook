@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
-import { selectIsLoggedIn } from 'redux/Phonebook/selectors';
+import { selectIsLoggedIn } from 'redux/selectors';
 import { MainDiv, Item, List, Container } from './Navigate.styled';
 import Button from '@mui/material/Button';
 

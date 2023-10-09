@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-import { selectIsLoggedIn, selectIsRefreshing } from "redux/Phonebook/selectors";
+import { selectIsLoggedIn, selectIsRefreshing } from "redux/selectors";
 
 export function PrivateRoute  ({
     component: Component,

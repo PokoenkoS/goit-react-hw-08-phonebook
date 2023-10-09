@@ -2,7 +2,7 @@ import React from "react";
 import {  FormDiv, FormLabel, Input, Button } from "./Form.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "redux/Phonebook/operations";
-import { selectContacts } from "redux/Phonebook/selectors";
+import { selectContacts } from "redux/selectors";
 import { useState } from "react";
 
  const Form =()=>{

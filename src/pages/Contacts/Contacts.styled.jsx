@@ -23,14 +23,13 @@ background-position: center;
 export const Container = styled.div`
     margin-left: 150px;
     margin-top: 60px;
+
     @media (max-width: 768px) {
         margin-left: 30px;
-  
-  }
-  @media (max-width: 1440px) {
+    }
+    @media (max-width: 1440px) {
         margin-left: 20px;
-  
-  }
+    }
 `
 
 export const Title = styled.h1`

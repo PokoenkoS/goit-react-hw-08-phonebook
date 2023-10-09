@@ -12,7 +12,6 @@ background-image: url(${img});
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: center;
-
 `
 
 export const FormDiv = styled.form`
@@ -25,22 +24,22 @@ width: 300px;
 height: 300px;
 margin-top:20px;
 padding: 15px 30px;
+
 @media screen and (min-width: 768px) {
 width: 350px;
 height: 400px;
   }
-
 `
 export const FormLabel = styled.label`
 width: 160px;
 padding-left: 10px;
-
 display: flex;
 flex-direction: column;
 margin-top: 8px;
 margin-left: 10px;
 font-size: 15px;
 font-weight: bold;
+
 @media screen and (min-width: 768px) {
 margin-left: 50px;
 font-size: 25px;
@@ -53,7 +52,6 @@ border-radius: 6px;
 border-color: #aee2e2;
 width: 250px;
 height: 30px;
-
 `    
 
 export const Button = styled.button`
@@ -63,15 +61,16 @@ export const Button = styled.button`
     margin-left: 80px;
     border-radius: 6px;
     margin-top: 20px;
+
     &:hover{
         background-color: red;
         color:#aee2e2;
     }
+
     @media screen and (min-width: 768px) {
         margin-left: 120px;
         font-size: 20px;
   }
-    
 `
 
 export const Title = styled.h2`

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from "react-redux";
 import { deleteContact } from "redux/Phonebook/operations";
-import { selectFilteredContacts } from "redux/Phonebook/selectors";
+import { selectFilteredContacts } from "redux/selectors";
 import { Container, List, Item, Button, Text, Info } from "./ContactList.styled";
 import Avatar from '@mui/material/Avatar';
 

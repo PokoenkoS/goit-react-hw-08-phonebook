@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import operations from "redux/Auth/operationsAuth";
-import { selectToken, selectUser } from '../../redux/Phonebook/selectors';
+import { selectToken, selectUser } from '../../redux/selectors';
 import { MainDiv, Button } from "./UserMenu.styled";
 // import Button from '@mui/material/Button';
 

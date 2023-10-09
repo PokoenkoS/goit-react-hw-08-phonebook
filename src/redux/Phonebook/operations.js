@@ -20,8 +20,7 @@ export const addContact = createAsyncThunk('contacts/addContact', async(contactD
         const contacts = await fetchApi.addContact(contactData);
         
         return contacts;
-        
-      
+           
     }catch(error) {
         console.log(error);
     }

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import {selectIsLoading, selectIsLoggedIn, selectIsRefreshing } from '../../redux/Phonebook/selectors';
+import {selectIsLoading, selectIsLoggedIn, selectIsRefreshing } from '../../redux/selectors';
 import { useEffect } from "react";
 import ContactList from "components/ContactList/ContactList";
 import Form from "../../components/Form/Form";

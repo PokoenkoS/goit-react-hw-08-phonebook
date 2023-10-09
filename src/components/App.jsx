@@ -2,7 +2,7 @@
 import { lazy, useEffect} from "react";
 import operations from "../redux/Auth/operationsAuth";
 import { useDispatch, useSelector} from "react-redux";
-import { selectIsRefreshing } from "redux/Phonebook/selectors";
+import { selectIsRefreshing } from "redux/selectors";
 import { Route, Routes } from 'react-router-dom';
 import { PrivateRoute } from "./PrivateRoute";
 import { PublickRoute } from "./PublickRoute";

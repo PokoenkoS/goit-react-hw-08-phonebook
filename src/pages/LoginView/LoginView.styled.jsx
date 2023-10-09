@@ -27,7 +27,6 @@ export const FormDiv = styled.form`
 display: flex;
 flex-direction: column;
 padding: 15px 30px;
-/* justify-content: space-around; */
 border: 3px solid #aee2e2;
 border-radius: 30px;
 width: 250px;
@@ -35,8 +34,7 @@ height: 250px;
 padding: 5px 3px;
 @media screen and (min-width: 768px) {
    padding-top: 20px;
-    /* width: 1400px;
-    height: 1460px; */
+   
     width: 350px;
 height: 300px;
     }
@@ -67,7 +65,7 @@ width: 200px;
 height: 30px;
 @media screen and (min-width: 768px) {
     width: 250px;
-    /* height: 30px; */
+    
     }
 `    
 

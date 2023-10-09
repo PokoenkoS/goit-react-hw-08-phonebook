@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux"
 import operations from "../../redux/Auth/operationsAuth";
-// import Button from '@mui/material/Button';
-import { FormDiv, FormLabel, MainDiv, Input, Title, Button } from "./RegisterView.styled";
+import { FormDiv, 
+    FormLabel, 
+    MainDiv, 
+    Input, 
+    Title, 
+    Button } from "./RegisterView.styled";
 
 const RegisterView =()=> {
     const dispatch = useDispatch();

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import {selectIsLoggedIn } from '../../redux/Phonebook/selectors';
+import {selectIsLoggedIn } from '../../redux/selectors';
 import UserMenu from '../UserMenu/UserMenu'
 import { Navigation } from "../Navigate/Navigate";
 import { Container } from "./AppBar.styled";
