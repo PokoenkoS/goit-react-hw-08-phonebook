@@ -42,8 +42,6 @@ margin-left: 10px;
 font-size: 15px;
 font-weight: bold;
 @media screen and (min-width: 768px) {
-/* width: 250px;
-height: 30px; */
 margin-left: 50px;
 font-size: 25px;
   }
@@ -55,10 +53,6 @@ border-radius: 6px;
 border-color: #aee2e2;
 width: 250px;
 height: 30px;
-@media screen and (min-width: 768px) {
-/* width: 250px;
-height: 30px; */
-  }
 
 `    
 

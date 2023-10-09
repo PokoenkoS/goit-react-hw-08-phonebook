@@ -6,14 +6,12 @@ min-height: 89vh;
 padding:10px 50px;
 display: flex;
 flex-direction:column;
-/* justify-content: flex-start; */
 font-size: 40;
-/* border-width: medium; */
 color: #010101;
 background-image: url(${img});
-    background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: center;
 
   @media (min-width: 768px) {
   flex-direction:column;
@@ -28,7 +26,10 @@ export const Container = styled.div`
     @media (max-width: 768px) {
         margin-left: 30px;
   
-
+  }
+  @media (max-width: 1440px) {
+        margin-left: 20px;
+  
   }
 `
 
